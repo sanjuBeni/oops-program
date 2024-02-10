@@ -13,7 +13,8 @@ class Test {
 
     public function classAsParm($other) {
         $other->foo = "Hello";
-        echo $other->foo;
+        $other->data = "New Data";
+        echo "$other->foo <br> $other->data" ;
     }
 
 }
