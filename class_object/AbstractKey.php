@@ -2,6 +2,7 @@
 
 abstract class AbstractKey {
 
+    public $name = "";
     abstract public function getData() : string;
     abstract public function sum($a, $b);
 
@@ -27,7 +28,7 @@ class SecondClass extends AbstractKey {
 
 }
 
-$obj = new SecondClass();
+$obj = new SecondClass("Sanjay");
 
 echo $obj->getData(); 
 echo "<br>";
